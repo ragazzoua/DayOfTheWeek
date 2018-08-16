@@ -4,9 +4,13 @@ public class Main {
 
     public static void main(String[] args) {
 
+        printDayOfTheWeek(5);
+        printDayOfTheWeek(4);
+
     }
-    private static void printDayOfTheWeek(int day){
-        switch (day){
+
+    private static void printDayOfTheWeek(int day) {
+        switch (day) {
             case 0:
                 System.out.println("Sunday");
                 break;
@@ -28,7 +32,9 @@ public class Main {
             case 6:
                 System.out.println("Saturday");
                 break;
-
+            default:
+                System.out.println("Invalid value");
+                break;
         }
     }
 }
